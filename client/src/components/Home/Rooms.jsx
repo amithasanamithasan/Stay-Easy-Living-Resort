@@ -25,7 +25,7 @@ const Rooms = () => {
   const [params,setParams]=useSearchParams();
 
   const category= params.get('category');
-  console.log(category);
+  // console.log(category);
 
 
   // database get rooms using tanstackquery
@@ -34,7 +34,7 @@ const Rooms = () => {
     queryKey:['rooms'],
 
     queryFn:async ()=>{
-   const {data}=  await axiosCommon.get('/rooms')
+   const {data}=  await axiosCommon.get(`/rooms?category=${category}`)
    return data 
     },
  
