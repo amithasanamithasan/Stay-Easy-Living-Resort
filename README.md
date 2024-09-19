@@ -1,4 +1,5 @@
-# stayVista-starter-template
+# Stay-Easy-Living-Resort
+
 
 
 
