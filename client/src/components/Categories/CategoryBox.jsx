@@ -1,8 +1,28 @@
 import PropTypes from 'prop-types'
 
+import queryString from 'query-string';
+import { useNavigate } from 'react-router-dom';
+
 const CategoryBox = ({ label, icon: Icon }) => {
+// usenavigate call form into URL set query
+const navigate = useNavigate()
+
+const handelquery=()=>{
+  
+   let querystring={category:label}
+  // console.log(querystring)
+  const url= queryString.stringifyUrl({
+
+url:'/',
+query:querystring
+  });
+  //  console.log(url); 
+  navigate(url)
+}
+
+
   return (
-    <div
+    <div onClick={handelquery}
       className={`flex 
   flex-col 
   items-center 

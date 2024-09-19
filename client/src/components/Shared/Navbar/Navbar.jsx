@@ -18,10 +18,10 @@ const Navbar = () => {
             <Link to='/'>
               <img
                 // className='hidden md:block'
-                src='https://i.ibb.co/4ZXzmq5/logo.png'
+                src='https://i.ibb.co.com/Tb68BHg/logo.png'
                 alt='logo'
-                width='100'
-                height='100'
+                width='70'
+                height='70'
               />
             </Link>
             {/* Dropdown Menu */}
@@ -41,7 +41,9 @@ const Navbar = () => {
                 {/* Dropdown btn */}
                 <div
                   onClick={() => setIsOpen(!isOpen)}
-                  className='p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition'
+                  className='p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 
+                  flex flex-row items-center gap-3 rounded-full
+                   cursor-pointer hover:shadow-md transition hover:bg-amber-300'
                 >
                   <AiOutlineMenu />
                   <div className='hidden md:block'>
@@ -58,11 +60,13 @@ const Navbar = () => {
                 </div>
               </div>
               {isOpen && (
-                <div className='absolute rounded-xl shadow-md w-[40vw] md:w-[10vw] bg-white overflow-hidden right-0 top-12 text-sm'>
+                <div className='absolute rounded-xl shadow-md w-[40vw] md:w-[10vw]
+                 bg-lime-100 overflow-hidden right-0 top-12 text-sm'>
                   <div className='flex flex-col cursor-pointer'>
                     <Link
                       to='/'
-                      className='block md:hidden px-4 py-3 hover:bg-neutral-100 transition font-semibold'
+                      className='block md:hidden px-4 py-3 hover:bg-neutral-100
+                       transition font-semibold'
                     >
                       Home
                     </Link>
@@ -71,7 +75,7 @@ const Navbar = () => {
                       <>
                         <div
                           onClick={logOut}
-                          className='px-4 py-3 hover:bg-neutral-100 transition font-semibold cursor-pointer'
+                          className='px-4 py-3 hover:bg-teal-200 transition font-semibold cursor-pointer'
                         >
                           Logout
                         </div>
