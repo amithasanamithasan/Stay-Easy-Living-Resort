@@ -8,7 +8,7 @@
 - [Project Requirement Doc](https://docs.google.com/document/d/1jjOq06IFv8vlyB9DdDJ_l4FY7zxp3HMm_W9Su6znsyg/edit?usp=sharing)
 
 ### Packages and api docs used in this project:
--[tailwindcss](https://tailwindcss.com/docs/installation)
+- [tailwindcss](https://tailwindcss.com/docs/installation)
 - [Stripe Website](https://stripe.com/)
 - [Stripejs Github](https://github.com/stripe/react-stripe-js)
 - [Stripejs Documentation](https://docs.stripe.com/payments/quickstart)
@@ -20,6 +20,8 @@
 - [axios](https://www.npmjs.com/package/axios)
 - [date-fns](https://www.npmjs.com/package/date-fns)
 - [query-string](https://www.npmjs.com/package/query-string)
+- [why should i use Query string in my project:-](A query string is a set of characters tacked onto the end of a URL. The query string begins after the question mark (?) and can include one or more parameters. Each parameter is represented by a unique key-value pair or a set of two linked data items. An equals sign (=) separates each key and value.)
+-
 - [react-date-range](https://www.npmjs.com/package/react-date-range)
 - [react-helmet-async](https://www.npmjs.com/package/react-helmet-async)
 - [react-hot-toast](https://www.npmjs.com/package/react-hot-toast)
