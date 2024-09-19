@@ -5,6 +5,7 @@ import Heading from '../Shared/Heading'
 import LoadingSpinner from '../Shared/LoadingSpinner'
 import { useQuery } from '@tanstack/react-query'
 import useAxiosCommon from '../../hooks/useAxiosCommon'
+import { useSearchParams } from 'react-router-dom'
 
 const Rooms = () => {
    // const [rooms, setRooms] = useState([])
@@ -21,8 +22,13 @@ const Rooms = () => {
 
   const axiosCommon= useAxiosCommon()
  
+  const [params,setParams]=useSearchParams();
+
+  const category= params.get('category');
+  console.log(category);
+
+
   // database get rooms using tanstackquery
- 
   const { data: rooms={} ,isLoading}=useQuery({
 
     queryKey:['rooms'],
