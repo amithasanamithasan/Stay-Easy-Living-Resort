@@ -83,6 +83,10 @@ const roomsCollection = client.db("hotelDb").collection("rooms");
 
     // rooms collection inserted database Api intregated and show all rooms showing user interface
 app.get('/rooms',async (req,res)=>{
+  const category =req.query.category;
+  // console.log(category);
+  let query={}
+  if(category && category!== 'null') query={category}
   const result =await roomsCollection.find().toArray();
   res.send(result);
 });
@@ -109,9 +113,9 @@ app.get('/room/:id',async (req,res)=>{
 run().catch(console.dir)
 
 app.get('/', (req, res) => {
-  res.send('Hello from StayVista Server..')
+  res.send('Stay-Easy-Living-Resort..')
 })
 
 app.listen(port, () => {
-  console.log(`StayVista is running on port ${port}`)
+  console.log(`Stay-Easy-Living-Resort ${port}`)
 })
