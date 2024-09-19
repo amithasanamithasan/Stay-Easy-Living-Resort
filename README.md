@@ -8,7 +8,7 @@
 - [Project Requirement Doc](https://docs.google.com/document/d/1jjOq06IFv8vlyB9DdDJ_l4FY7zxp3HMm_W9Su6znsyg/edit?usp=sharing)
 
 ### Packages and api docs used in this project:
-
+-[tailwindcss](https://tailwindcss.com/docs/installation)
 - [Stripe Website](https://stripe.com/)
 - [Stripejs Github](https://github.com/stripe/react-stripe-js)
 - [Stripejs Documentation](https://docs.stripe.com/payments/quickstart)
