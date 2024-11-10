@@ -87,7 +87,7 @@ app.get('/rooms',async (req,res)=>{
   // console.log(category);
   let query={}
   if(category && category!== 'null') query={category}
-  const result =await roomsCollection.find().toArray();
+  const result =await roomsCollection.find(query).toArray();
   res.send(result);
 });
 
